@@ -271,6 +271,7 @@ def transform_episode(original: Dict[str, Any]) -> Dict[str, Any]:
         "environment_details": env_details(device_info),
         "instruction": task_info.get("instruction") or "",
         "agent_metadata": dict(AGENT_METADATA),
+        "held_out": 0,
         "trajectory": [],
         "trajectory_length": len(original.get("steps", [])),
         "orm_label": {
