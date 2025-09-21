@@ -1,0 +1,3 @@
+annotations/*.json
+reformatted_annotations/*.json
+.DS_Store
